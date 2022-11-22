@@ -8,7 +8,6 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-
     if a>b:
         if a>c:
             print(a)
@@ -20,5 +19,4 @@ def main(a,b,c):
             print(b)
         else:
             print(c)      
-    return
-print(main(-5,-3,-1))
+    return(main(1,4,2))
