@@ -8,15 +8,12 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    if a!=b:
-        if a!=c:
-            return(a)
-        else:
-            return(c)
+    if (a>=b and a<=c) or (a<=b and a>=c):
+        return  a
+    elif (b>=a and b<=c) or (b<=a and b>=c):
+        return b
+    elif (c>=a and c<=b) or (c>=b and c<=a):
+        return  c
 
-    else:
-        if b!=c:
-            return(b)
-        else:
-            return(c) 
-print(main(5,5,1))
+
+print(main(3,7,1))
